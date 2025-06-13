@@ -1,15 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>360 Earth Globe</title>
+  <meta charset="UTF-8" />
+  <title>Earth Globe</title>
   <style>
     body { margin: 0; overflow: hidden; }
     canvas { display: block; }
+    #fail { position: absolute; top: 10px; left: 10px; color: red; background: rgba(0,0,0,0.7); padding: 5px; }
   </style>
 </head>
 <body>
+  <div id="fail">If this text stays here, the globe didn’t load!</div>
   <script src="https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.160.1/examples/js/controls/OrbitControls.min.js"></script>
   <script src="script.js"></script>
